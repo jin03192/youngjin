@@ -1,0 +1,23 @@
+/***************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div안에 프로필 사진 및 연주 사진 크기 설정
+|***************************************************************************/
+  div img[title="one"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+  }
+  div img[title="two"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+  }
+  div img[title="three"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+  }
+  div img[title="four"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+  }

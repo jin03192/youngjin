@@ -1,0 +1,32 @@
+/*
+|**************************************************************************
+| login id, password 입력부분
+|**************************************************************************
+*/
+.back{
+    width:103%;
+}
+.topmenu{
+    float:right;
+}
+.topmenu a{
+    z-index:100;
+    text-align:center;
+    float:left;
+    color:white;
+    background-color:rgba(0,0,0,.5);
+    padding:10px;
+    width:49%;
+}
+.topmenu a:first-child{
+    border-right:1px solid white;
+}
+.topmenu a:hover{
+    text-decoration: none;
+    color:#006400;
+}
+input[type=text], input[type=password] {
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

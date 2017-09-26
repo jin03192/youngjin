@@ -1,0 +1,113 @@
+      #second_article{
+        position: absolute;
+        top: 55.9%; left: 55.8%;
+        width: 200px; height: 200px;
+      }
+      #third_article{
+          position: absolute;
+          top: 35.5%; left: 55.8%;
+          width: 200px; height: 200px;
+      }
+      #first_article{
+          position: absolute;
+          top:32.6%; left:30%;
+          width: 480px; height:450px;
+      }
+      #Below{
+        position:absolute;
+        top:82%; left: 30%;
+        width: 520px;
+      }
+      #buttons{
+        margin-top: -20px;
+        margin-left: 125px;
+      }
+      #bpm {
+        display: inline-block;
+        font-size:20px;
+        font-family: 'Ravi Prakash', cursive;
+        margin-top:0px;
+      }
+      #buttons button{
+        background:#1AAB8A;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:25px;
+        font-size:13px;
+        padding:0 0.8em;
+        cursor:pointer;
+      }
+      #buttons button:hover{
+        background:#fff;
+        color:#1AAB8A;
+      }
+      #buttons button:before,#buttons button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #1AAB8A;
+        /*transition:400ms ease all;*/
+      }
+      #buttons button:after{
+        top:inherit;
+        left: 0;
+        bottom:0;
+      }
+      #buttons button:hover:before,#buttons button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+      .range-slider__range {
+      -webkit-appearance: none;
+      width: calc(75% - (73px));
+      height: 5px;
+      border-radius: 5px;
+      background: #d7dcdf;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      }
+    .range-slider__range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #2c3e50;
+      cursor: pointer;
+      -webkit-transition: background .15s ease-in-out;
+      transition: background .15s ease-in-out;
+    }
+    .range-slider__range::-webkit-slider-thumb:hover {
+      background: #1abc9c;
+    }
+    .range-slider__range:active::-webkit-slider-thumb {
+      background: #1abc9c;
+    }
+    .range-slider__value {
+      display: inline-block;
+      position: relative;
+      width: 60px;
+      color: #fff;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 3px;
+      background: #2c3e50;
+      padding: 5px 10px;
+      margin-left: 8px;
+    }
+    .range-slider__value:after {
+      position: absolute;
+      top: 8px;
+      left: -7px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid #2c3e50;
+      border-bottom: 7px solid transparent;
+      content: '';
+    }

@@ -1,0 +1,104 @@
+/***************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div안에 게시물 제목과 게시자가 표시되는 frame(까만색 네모박스)
+|***************************************************************************/
+  div.Name_Tag {
+    position:relative;
+    width: 200px;
+    border: 4px solid #3d3d3d;
+    margin-top: 170px;
+    left: 9%;
+    text-align: center;
+  }
+  /***************************************************************************
+  | 랭킹 게시물 보여주는 하얀색 div의 포지션 설정
+  |***************************************************************************/
+    .one,.two,.three,.four{
+      float: left;
+      position: relative;
+      margin-top: 10%;
+      width: 250px;
+      height: 350px;
+      left: 5%;
+      margin-left: 4%;
+      border: 4px solid white;
+      background-color: white;
+    }
+  /***************************************************************************
+  | 랭킹 게시물 보여주는 하얀색 div안에 게시물 제목과 게시자가 표시되는 내용(font)
+  |***************************************************************************/
+    p[title="subject"] {
+      margin-top: 5px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    p[title="writer"] {
+      position: relative;
+      top: -10px;
+      font-size: 17px;
+    }
+    /***************************************************************************
+    | 동영상 게시물
+    |***************************************************************************/
+    .tablecard{
+      position: absolute;
+      width: 70%;
+      border: 8px solid white;
+      margin-top: 10%;
+      left: 20%;
+      padding: 50px;
+      display: inline-block;
+    }
+    .card {
+        transition: 0.3s;
+        width: 30%;
+        display: inline-block;
+        position: relative;
+        padding: 10px;
+    }
+    .card img[alt="video"]{
+      width: 49%;
+      height: 300px;
+    }
+    .card img[alt="playbtn"]{
+      width: 20%;
+      position: absolute;
+      top: 25%;
+      left: 40%;
+    }
+
+    .container {
+        padding: 2px 16px;
+        background-color: white;
+    }
+    .container img[alt="profile"]{
+      width: 50px;
+      height: 50px;
+      position: relative;
+      border-radius: 70px;
+      top: 10px;
+    }
+    .container p[title="title"]{
+      font-size: 25;
+      position: absolute;
+      top: 60%;
+      left: 20%;
+    }
+    .container p{
+      margin-top: 30px;
+    }
+    .container>a{
+      color: black;
+    }
+    .container>a:hover{
+      color: gray;
+    }
+    .container>button{
+      cursor: pointer;
+      border: none;
+      color: white;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    .container>button:hover{
+      background-color: #0b7dda;
+    }

@@ -1,0 +1,24 @@
+p{
+  font-family:Hanna; font-size:15px;
+  display: inline-block;
+  margin-top:10px;
+}
+div{
+  display: inline-block;
+  margin-top: 0px;
+  border: 1px solid;
+  width: 400px; height: 34px;
+}
+#tables{
+  position: absolute;
+  top: 180px; left: 380px;
+}
+#Result{
+  display: inline-block;
+}
+#content{
+  display: inline-block;
+}
+#title{
+  width: 402px; height: 20px;
+}

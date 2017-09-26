@@ -1,0 +1,185 @@
+/***************************************************************************
+| 좌측 네비게이션 메뉴 속성 설정
+|***************************************************************************/
+  /*
+  .Record_wait, .Record_Collaborate_wait,
+  .Record_Collaborate_complete,
+  .Video_Collaborate_wait,
+  .Video_Collaborate_complete {
+    margin-top: 12%;
+    margin-left: 50px;
+    width: 300px;
+    height: 150px;
+    border: 8px solid black;
+    color: black;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+  }
+  a{
+    text-decoration: none;
+  }
+  a>div:hover{
+    color: gray;
+    text-decoration: none;
+  }
+  .nav{
+    display: inline-block;
+  }
+  */
+/***************************************************************************
+| 각 태그별 가장 큰범위 속성
+|***************************************************************************/
+/*
+  nav {
+    margin-right: 15px;
+    display: inline-block;
+    margin-top: 0;
+  }*/
+  section {
+    display: inline-block;
+    width:1300px;
+    height:800px;
+    position:relative;
+    left:300px;
+    top:250px;
+    margin-bottom:100px;
+    border: 8px solid gray;
+  }
+
+  p {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size:40px;
+  }
+
+  article {
+    text-align: center;
+  }
+
+/***************************************************************************
+| 합주전/합주후 글자의 위치 및 글자속성 설정
+|***************************************************************************/
+  span:nth-child(n+2){
+    margin-left: 122.5px;
+    margin-right: 122.5px;
+    font-weight: bold;
+    width:100%;
+    display: inline;
+    color: rgba(255,255,255,0.8);
+  }
+
+
+/***************************************************************************
+| Record작곡&합주랭킹,Video작곡&합주랭킹 글자의 위치 및 글자속성 설정
+|***************************************************************************/
+  span:nth-child(-n+2) {
+    margin-left: 220px;
+    margin-right: 220px;
+    font-weight: bold;
+    width:100%;
+    display: inline;
+  }
+
+
+/***************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div안에 프로필 사진이 들어갈 div설정
+|***************************************************************************/
+article>div>div{
+  margin-top: 50px;
+    width: 250px;
+    height:250px;
+    display: inline-block;
+
+  }
+.pop{
+  margin-top: 10%;
+}
+
+/***************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div의 속성설정
+|***************************************************************************/
+  article>div {
+    margin-top: 0px;
+    width: 250px;
+    height:320px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.8);
+  }
+/***************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div안에 프로필 사진 및 연주 사진 크기 설정
+|***************************************************************************/
+  article img[title="Record_Collabo_Before"]{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+  }
+  article img[title="Record_Collabo_After"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+  }
+  article img[title="Video_Collabo_Before"]{
+    width: 200px;
+    height: 150px;
+  }
+  article img[title="Video_Collabo_After"]{
+    width: 100px;
+    height: 150px;
+  }
+
+
+/***************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div의 포지션 설정
+|***************************************************************************/
+  .Record_Collabo_Before,
+  .Record_Collabo_After,
+  .Video_Collabo_Before,
+  .Video_Collabo_After {
+    position:relative ;
+    top: 50px;
+  }
+
+
+/***************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div안에 게시물 제목과 게시자가 표시되는 frame(까만색 네모박스)
+|***************************************************************************/
+  .Name_Tag {
+    position:relative;
+    width: 210px;
+    height:80px;
+    top: -135px;
+    border: 4px solid #3d3d3d;
+  }
+
+
+/*
+**************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div안에 게시물 제목과 게시자가 표시되는 내용(font)
+|**************************************************************************
+*/
+  p[title="subject"] {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  p[title="writer"] {
+    position: relative;
+    top: -10px;
+    font-size: 17px;
+  }
+
+/*
+**************************************************************************
+| 롤링배너 부분
+|**************************************************************************
+*/
+.rolling{
+  position:relative;
+  width:80%;
+  height:40%;
+  left:10%;
+}

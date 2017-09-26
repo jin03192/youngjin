@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SocketChat</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font: 14px Lato; }
+    #console { background-color: #eee; padding: 4px; position: fixed; bottom: 0; width: 100%; }
+    form { width: 100%;}
+    form input { border: 0; padding: 10px; width: 100%; }
+    #info { font-size: 9px; color: #888; padding: 6px; height: 22px;}
+    #messages { list-style-type: none; margin: 0; padding: 0;}
+    #messages li { padding: 5px 10px;}
+    #messages li:nth-child(odd) { background: #efefef; }
+    #userlist{
+      border: 1px solid gray;
+      width: 440px; height: 200px;
+      font-size: 50px;
+    }
+    #scroll_div{
+      width: 440px; height:432px;
+      border:2px solid gray;
+      /*border-radius:5px;*/
+      overflow:scroll;
+      overflow-x:hidden;
+      font-size: 20px;
+    }
+    .imgSelect {
+       cursor: pointer;
+    }  
+
+    .popupLayer {
+       position: absolute;
+       display: none;
+       background-color: #ffffff;
+       border: solid 2px #d0d0d0;
+       width: 350px;
+       height: 150px;
+       padding: 10px;
+    }
+    .popupLayer div {
+       position: absolute;
+       top: 5px;
+       right: 5px
+    }
+
+  </style>
+</head>
+
+
+
+<body id="app">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <script>
+  // $(function(){
+  // // var users;
+  // // users = "<?php
+  // //     $user_s = session()->all();
+  // //     $user_st = $user_s["user_id"];
+  // //     echo $user_st;
+  // //   ?>";
+  // // $("#userlist").append(users);
+  //   // socket.emit('chat.info', info);
+
+  
+  // // $(function(){
+  // //     $("#userlist").append("<?php 
+  // //     // $user = DB::table('users')->pluck('user_id');
+  // //     $user_id = session()->get('user_id','');
+  // //     echo $user_id;
+  // //   ?>");
+  // });
+  </script>
+  
+  <script>
+  
+  var user = "<?php
+      // $user_id = session()->forget('user_id');
+      $user_id = session()->get('user_id','');
+      echo $user_id;
+      // dd($user_id);
+  ?>";
+  
+  var socket = io('https://harmony-project-chonahoom.c9users.io:8082');
+
+    new Vue({
+      el: '#app',
+
+      data: {
+        messages: [],
+        message: '',
+        info: ''
+      },
+      
+      ready: function () {
+        socket.on('users', function(){
+          $('#scroll_div').append(user);
+        });
+        
+        socket.on('chat.message', function (message) {
+          // Now all clients listen for an 'chat.message' event.
+          // When that happens, a client update the 'messages' array,
+          var msg = message;
+          $('#scroll_div').append(msg+"<br>");
+          $('#scroll_div').scrollTop($('#scroll_div')[0].scrollHeight);
+          // this.messages.push(message);
+          // $("#scroll_div").scrollTop($("#scroll_div")[0].scrollHeight+20);
+          // $('#scroll_div').scrollTop($('#scroll_div').prop('scrollHeight'));
+        }.bind(this));
+
+        socket.on('chat.info', function (info) {
+          this.info = info;
+
+          setTimeout(function () {
+            this.info = '';
+          }.bind(this), 1000);
+        }.bind(this));
+      },
+
+      methods: {
+        send: function (info, event) {
+          if (typeof event !== 'undefined') {
+            // By checking the existence of second args,
+            // We can safely assume the first argument is information message.
+            socket.emit('chat.info', info);
+            return;
+          }
+
+          // Send message to the server.
+          // Upon receiving the server will broadcast this message to all clients.
+          socket.emit('chat.message', this.message);
+          this.message = '';
+        }
+      }
+    });
+  </script>
+</body>
+</html>

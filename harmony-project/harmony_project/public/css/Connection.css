@@ -1,0 +1,112 @@
+    #maintext{
+      font-size: 20px;
+      position: absolute;
+      top: 300px; left: 165px;
+    }
+
+/*
+|**************************************************************************
+| 메인 div 크기 및 속성을 정의하는곳
+|**************************************************************************
+*/
+    #div1{
+      /*background-image: URL('/img/dandelion.jpg');*/
+      /*background-repeat: no-repeat;*/
+      /*background-position: -50px 0px; */
+      /*background-size: 1050px;*/
+      font-family: 'Hanna', serif;
+      border-radius: 15px;
+      border: 3px solid #999999;
+      color: #000000;
+      position: absolute;
+      top:166px; left:240px;
+      width: 1060px; height:420px;
+      padding-left:55px;
+      padding-right:15px;
+      padding-top:15px;
+      margin-left:-130px;
+      
+    }
+/*
+|**************************************************************************
+| 기본 정보를 display:none으로 숨기고 있음
+|**************************************************************************
+*/
+    #div6,#div7,#div8 {display:none;}
+    #div11,#div12,#div13,#div14 {display:none;}
+/*
+|**************************************************************************
+| "Admain님과 취향이 맞는 음원"을 감싸는 #div5
+|**************************************************************************
+*/
+    #div5{
+      position: absolute;
+      top: 104px; left: 670px;
+    }
+/*
+|**************************************************************************
+| #div2, #div5는 select으로 선택한 정보가 나오게하는 div창
+|**************************************************************************
+*/
+    #div2{
+      position: absolute;
+      top: 118px; left: 530px;
+      margin-left: 20px;
+      width: 480px; height: 200px;
+    }
+    #div img{
+      padding: 50px;
+    }
+    #div10{
+      position: absolute;
+      top: 118px; left: 40px;
+    }
+/*
+|**************************************************************************
+| display: inline-block; = 쓸데없이 차지하는 padding , margin 등을 정해진 길이만큼만 나타내준다
+|**************************************************************************
+*/
+    #text{
+      position: absolute;
+      top: 135px; left: 80px;
+      display: inline-block;
+      margin-right:15px;
+      
+    }
+    #texts{
+      margin-top: -10px;
+      margin-left: -110px;
+    }
+    #Redo{
+      margin-left: 120px;
+    }
+    #imgs{
+      margin-top: 11px;
+      margin-left: 12px;
+      /*box-shadow: 4px 4px 3px #000; */
+      /*border: 1px solid #000000;*/
+      border-radius: 70px;
+   } 
+    #imgss{
+      margin-top: 12px;
+      margin-left: 18px;
+    }
+    #textbox{
+      float:left;
+      text-align: center;
+      display:inline;
+    }
+    #textbox2{
+      float:left;
+      text-align: center;
+      margin-left:10px;
+      margin-right:10px;
+    }
+    #textbox3{
+      float:left;
+      text-align: center;
+    }
+    #sel{
+      position: absolute;
+      top:15px; left: 198px;
+    }

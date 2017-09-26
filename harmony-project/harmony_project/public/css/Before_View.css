@@ -1,0 +1,51 @@
+
+/*
+|**************************************************************************
+| 사용자 게시글 표시 부분
+|**************************************************************************
+*/
+.article{
+  position: absolute;
+  left: 20%;
+  display: inline-block;
+}
+/*
+.aling{
+  float: left;
+}
+/*
+|**************************************************************************
+| 
+|**************************************************************************
+*/
+.bandlist p{
+  position:relative;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  border: 3px solid darkgreen;
+}
+.bandlist p{
+  font-size:40px;
+  border-bottom:4px solid darkgreen;
+}
+.styled-select{
+    overflow:auto;
+    height:550px;
+    border-radius: 15px; 
+    border: 4px solid darkgreen; 
+    position: absolute; 
+    top:380px;
+    right:200px;
+    background:white;
+}
+.styled-select>div{
+    text-align: center; 
+    font-size: 25px;
+}
+.namealign{
+  position:relative;
+  color:black;
+  display:inline-block;
+  margin-left:10px;
+}

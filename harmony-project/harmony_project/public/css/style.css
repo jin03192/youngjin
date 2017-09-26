@@ -1,0 +1,52 @@
+
+/*
+|**************************************************************************
+| slider div박스 스타일 적용요소들
+|**************************************************************************
+*/
+#slider ul {
+	list-style:none;
+	position:relative;
+	z-index:2;
+}
+
+/**************
+	이미지의 위치를 정가운데 위치하게 해준다.
+***************/
+#slider ul li {
+    position: absolute;
+    top: -500px; left: 215px;
+	float:left;
+	position:relative;
+}
+/**************
+	position:relative; 옵션은	레이아웃을 변경하지 않고 요소의 위치를 ​​조정합니다.
+***************/
+
+#slider .jcarousel-clip {
+	position:relative;
+	height:471px;
+	/*overflow:hidden;*/
+}
+
+/**************
+	cursor:pointer; 속성은 마우스가 놓여졌을때에 마우스 포인터를 변경해준다.
+	z-index:4; 본래의 이미지보다 화살표가 위에 존재하게 함으로써 화살표를 클릭할 수 있다.
+	position:absolute; 를 통해 화살표의 위치를 지정해준다.
+***************/
+#slider .jcarousel-next, #slider .jcarousel-prev {
+	position:absolute;
+	top:300px;
+	width:47px;
+	height:80px;
+	z-index:4;
+	cursor:pointer;
+}
+#slider .jcarousel-next {
+	background:url(/images/slider-next.png);
+	top: 510px; right:5px;
+}
+#slider .jcarousel-prev {
+	background:url(/images/slider-prev.png);
+	top: 510px; left:272px;
+}

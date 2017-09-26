@@ -1,0 +1,141 @@
+  .btns>button{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:25px;
+    font-size:13px;
+    padding:0 0.8em;
+    cursor:pointer;
+    text-decoration: none;
+  }
+  /*
+  |**************************************************************************
+  | 마우스가 올려 졌을 때의 색상을 지정
+  |**************************************************************************
+  */
+  .btns>button:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  /*
+  |**************************************************************************
+  | 마우스가 올려 졌을 때 위아래 나타나는 선의 위치를 지정해준다.
+  |**************************************************************************
+  */
+  .btns>button:before,.btns>button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    /*transition:400ms ease all;*/
+  }
+  /*
+  |**************************************************************************
+  |  마우스가 버튼에 올려졌을 때 선을 나타나게 해주는 css
+  |**************************************************************************
+  */
+  .btns>button:after{
+    top:inherit;
+    left: 0;
+    bottom:0;
+  }
+  /*
+  |**************************************************************************
+  | 마우스를 올렸을때 선의 길이를 지정해줄 때 사용한다
+  | transition:800ms ease all; = 선이 나타나는 시간을 조정해준다.
+  |**************************************************************************
+  */
+  .btns>button:hover:before,.btns>button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .range-slider__range {
+  -webkit-appearance: none;
+  width: calc(30% - (73px));
+  height: 5px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  }
+.range-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-webkit-slider-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider__range:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+.range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+.range-slider__value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+.select{
+  position: absolute;
+  margin-top: 64%;
+  left: 38%;
+}
+#slider_value_view{
+  position: absolute;
+  margin-top: 63%;
+  left: 64%;
+}
+.btns{
+  position: absolute;
+  margin-top: 72%;
+  left: 50%;
+}
+.btns>button{
+  margin: 5px;
+  margin-bottom: 5%;
+}
+p {
+  position: absolute;
+  margin-top: 63%;
+  left: 33%;
+  font-size: 25px;
+  font-family: 'Ravi Prakash', cursive;
+}
+.sourt{
+  position: absolute;
+  margin-top: 10%;
+  left: 30%;
+}
+.song{
+  position: absolute;
+  margin-top: 55%;
+  left: 30%;
+}

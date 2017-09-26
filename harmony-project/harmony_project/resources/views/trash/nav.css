@@ -1,0 +1,85 @@
+#mySidenav{
+    position:absolute;
+}
+#mySidenav a{
+    text-align:left;
+    position: absolute;
+    left: -240px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 350px;
+    height:100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+#mySidenav #albumn>img{
+    width:50px;
+    height:50px;
+    float:right;
+    margin-right:20px;
+}
+#mySidenav img{
+    width:100px;
+    height:50px;
+    float:right;
+    margin-left:10px;
+}
+
+/*img[title="Rbefore"]{
+    width:1000px;
+    height:50px;
+    float:right;
+    margin-left:10px;
+}
+
+img[title="Rafter"]{
+    width:50px;
+    height:50px;
+    float:right;
+    margin-left:10px;
+}
+
+img[title="Vbefore"]{
+    width:50px;
+    height:50px;
+    float:right;
+    margin-left:10px;
+}
+
+img[title="Vafter"]{
+    width:50px;
+    height:50px;
+    float:right;
+    margin-left:10px;
+}*/
+
+#mySidenav a:hover {
+    left: -50px;
+    text-align:right;
+}
+
+#albumn{
+    top: 20px;
+    background-color: #008080;
+}
+
+#Rbefore {
+    top: 100px;
+    background-color: #20B2AA;
+}
+
+#Rafter {
+    top: 180px;
+    background-color: #00CED1;
+}
+
+#Vbefore {
+    top: 260px;
+    background-color: #40E0D0
+}
+#Vafter {
+    top: 340px;
+    background-color: #7FFFD4
+}

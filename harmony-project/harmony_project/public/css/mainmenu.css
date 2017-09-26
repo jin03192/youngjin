@@ -1,0 +1,63 @@
+/*
+|**************************************************************************
+| 전체부분
+|**************************************************************************
+*/
+body{
+    background-color: #21adbe;
+    width: 100%;
+    height: 100%;
+}
+.align_box1{
+      width:100%;
+      background-color:white;
+      border:1px solid white;
+    }
+/*
+|**************************************************************************
+| 메뉴부분
+|**************************************************************************
+*/
+.menu_align{
+  width:100%;
+  font-size: 30px;
+  text-align: center;
+  
+}
+.menusize{
+  list-style:none;
+}
+.menusize li{
+  width:20%;
+  float: left;
+}
+.menusize a{
+  color:white;
+  text-decoration: none;
+  padding: 20px 30px;
+}
+.menusize a:hover{
+  color:#187a85;
+  background-color: white;
+  text-decoration: none;
+}
+/*
+|**************************************************************************
+| 버튼부분
+|**************************************************************************
+*/
+.login{
+  position:relative;
+  top:-80px;
+}
+.btn{
+  border:0;
+  outline:0;
+  background-color:#21adbe;
+}
+.btn a{
+  font-size: 20px;
+  text-decoration: none;
+  color:#187a85;
+  margin
+}

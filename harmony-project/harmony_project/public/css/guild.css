@@ -1,0 +1,49 @@
+/*
+|**************************************************************************
+| guild main page css
+|**************************************************************************
+*/
+.guildmain{
+  margin:10%;
+  float: left;
+}
+.guildmark img{
+  width: 300px;
+  height: 300px;
+}
+.guild table{
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    font-size: 20px;
+}
+div.guild {
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+/*
+|**************************************************************************
+| guild main page member style
+|**************************************************************************
+*/
+div.member{
+  margin-top:10%;
+  float: left;
+  width:20%;
+}
+div.member > table{
+  width: 100%;
+  text-align: center;
+}
+.member th {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+}
+.member tr:hover {background-color: #f5f5f5}
+.member td {
+    border-bottom: 1px solid lightsteelblue;
+}

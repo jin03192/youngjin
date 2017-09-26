@@ -1,0 +1,57 @@
+   /*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+        body {
+            /*background-image:url('/img/MusicQuitousBackgroundImage1.png');
+            background-repeat: no-repeat;
+            background-size: 100%, 50%;*/
+            background-color: #222222;
+            color: #636b6f;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            margin-top:0;
+        }
+
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .position-ref {
+            position: relative;
+        }
+        .top-right {
+            position: absolute;
+            right: 10px;
+            top: 25px;
+        }
+        .ranking{
+          position: absolute;
+        }
+        .content {
+            text-align: center;
+            padding-top: 100px;
+        }
+        .title {
+            font-size: 84px;
+        }
+        .btn{
+          padding: 0 25px;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: .1rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: 0;
+          outline: 0;
+        }
+        .m-b-md {
+            margin-bottom: 30px;
+        }
+        button > a {
+          color: white;
+          text-decoration: none;
+        }
+        button > a:hover, a:focus {
+          color: #e0ebab;
+          opacity: 0.8;
+          text-decoration: none;
+        }

@@ -1,0 +1,124 @@
+/*
+|**************************************************************************
+| 네비게이션 메뉴
+|**************************************************************************
+*/
+.nav{
+  float: left;
+  margin-top: 10%;
+}
+/*
+|**************************************************************************
+| 게시판 전체 틀 부분
+|**************************************************************************
+*/
+
+.table {
+ width: 70%;
+ float: left;
+ margin-top: 2%;
+ margin-left: 10%;
+ font-size: 20px;
+}
+/* 게시판 한 column단위 */
+.list{
+  position: relative;
+}
+.column{
+  position: relative;
+  list-style: none;
+  width: 300px;
+  margin-top: 2%;
+}
+/* 앨범 커버 사진부분 */
+.cover{
+  position: relative;
+  width: 300px;
+}
+/* 게시판 정보 부분 */
+.info{
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 600px;
+  height: 300px;
+  border: 1px solid white;
+}
+/* 인기 TOP */
+.tabletop{
+  position: absolute;
+  left: 5%;
+  top: 0px;
+  width: 95%;
+  display: block;
+  border-bottom: 1px solid white;
+}
+/* 앨범 제목 */
+.albumtitle{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  font-size: 40px;
+
+}
+/* 앨범 아티스트 */
+.artist{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+}
+/* 총 시간과 추천 수 표시 */
+.foot{
+  position: relative;
+  top: 80%;
+  font-size: 20px;
+  border-top: 1px solid white;
+}
+.foot>ul{
+  overflow: auto;
+}
+.foot>ul>li{
+  float: left;
+  list-style: none;
+  margin-left: 20%;
+  font-size: 18px;
+}
+/***************************************************************************
+| 랭킹 게시물 보여주는 하얀색 div안에 게시물 제목과 게시자가 표시되는 frame(까만색 네모박스)
+|***************************************************************************/
+  div.Name_Tag {
+    position:relative;
+    width: 200px;
+    border: 4px solid #3d3d3d;
+    margin-top: 120px;
+    left: 9%;
+    text-align: center;
+  }
+  /***************************************************************************
+  | 랭킹 게시물 보여주는 하얀색 div의 포지션 설정
+  |***************************************************************************/
+    .one,.two,.three,.four{
+      float: left;
+      position: relative;
+      margin-top: 10%;
+      width: 250px;
+      height: 350px;
+      left: 5%;
+      margin-left: 4%;
+      border: 4px solid white;
+      background-color: white;
+    }
+  /***************************************************************************
+  | 랭킹 게시물 보여주는 하얀색 div안에 게시물 제목과 게시자가 표시되는 내용(font)
+  |***************************************************************************/
+    p[title="subject"] {
+      margin-top: 5px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    p[title="writer"] {
+      position: relative;
+      top: -10px;
+      font-size: 17px;
+    }

@@ -1,0 +1,13 @@
+#tables{
+  position: absolute;
+  top: 180px; left: 380px;
+}
+#Result{
+  display: inline-block;
+}
+#content{
+  display: inline-block;
+}
+#title{
+  width: 402px; height: 20px;
+}

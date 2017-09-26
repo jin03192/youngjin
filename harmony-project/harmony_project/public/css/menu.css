@@ -1,0 +1,58 @@
+/*
+|**************************************************************************
+| topmenu dropdown style
+|**************************************************************************
+*/
+
+.dropbtn {
+    /*처음 보여지는 btn 배경 부분*/
+    background-color: #7FC7AF;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 200px;
+    display: inline-block;
+    text-decoration: none;
+}
+.dropbtn:hover{
+    text-decoration: none;
+    color:#006400;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    /*hover시 보여지는 content부분 배경색*/
+    background-color: white;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover {
+  /*content부분 hover 시 보여지는 배경색*/
+  background-color: #f9f9f9;
+  text-decoration: none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #7FC7AF;
+}
+.menu{
+  background-color: #7FC7AF;
+  text-align: center;
+}
+

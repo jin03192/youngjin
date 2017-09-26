@@ -1,0 +1,47 @@
+/*
+|**************************************************************************
+| 악보 부분 aling
+|**************************************************************************
+*/
+.musicnote>img{
+  width: 80%;
+  height: 100%;
+}
+.musicnote{
+  width: 50%;
+  height: 70%;
+  margin-left: 25%;
+  margin-top: 10%;
+  float: left;
+}
+/*
+|**************************************************************************
+| 악보 옆 수정 버튼 부분
+|**************************************************************************
+*/
+.musicmenu>button{
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin-top: 30%;
+  margin-left: 30%;
+}
+.musicmenu{
+  border-left: 2px solid black;
+  float: left;
+  margin-top: 10%;
+}
+.playbtn{
+  float: left;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+.playbtn>button{
+  width: 30px;
+  height: 30px;
+}
+.modifyok{
+  float: left;
+  margin-top: 50%;
+  margin-left: 50%;
+}

@@ -1,0 +1,173 @@
+       #first_article{
+          position: absolute;
+          top: 15em; left: 1em;
+          width: 30em; height: 30em;
+      }
+      #second_article{
+        position: absolute;
+         top:15em; left:70em;
+        width: 200px; height: 200px;
+      }
+      #third_article{
+          position: absolute;
+          top: 12em; left: 32em;
+          width: 500px; height: 480px;
+      }
+      #fourth_article{
+        position: absolute;
+        top:35%; left:73%;
+        width: 200px; height: 200px;
+      }
+      #fifth_article{
+        position: absolute;
+        top:35%; left:84%;
+        width: 200px; height: 200px;
+      }
+      
+      .recorded_view{
+        position: absolute;
+          top:57%; left:66%;
+          width: 300px; height:250px;
+      }
+      .recorded_view0{
+        position: absolute;
+          top:57%; left:66%;
+          width: 300px; height:250px;
+      }
+      .recorded_view1{
+        position: absolute;
+          top:35%; left:66%;
+          width: 300px; height:250px;
+      }
+      .recorded_view2{
+        position: absolute;
+          top:35%; left:82%;
+          width: 300px; height:250px;
+      }
+      .cam_view{
+        position: absolute;
+        margin-left:4em;
+          top: 33%; left: 25em;
+          width: 38em; height: 25em;
+      }
+      .note_view{
+        position: absolute;
+        top: 32%; left: 6%;
+        width: 20em; height: 25em;
+      }
+      .recorded_view{
+        position: absolute;
+          top:19em; left:65.5em;
+          width: 300px; height:250px;
+      }
+      .gum{
+          position: absolute;
+          top:3em; left:26em;
+          width: 60em; height:70em;
+          
+      }
+      
+      
+      #Below{
+        position:absolute;
+        margin:auto;
+        width: 650px;
+        left:35%;
+      }
+      #buttons{
+        position: relative;
+        margin-top: 35em;
+      }
+      .buttons{
+        position: relative;
+        top: 650px;
+      }
+      #bpm {
+        display: inline-block;
+        font-size:20px;
+        font-family: 'Ravi Prakash', cursive;
+        margin-top:0px;
+      }
+      #buttons button {
+        background:#1AAB8A;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:25px;
+        font-size:13px;
+        padding:0 0.8em;
+        cursor:pointer;
+      }
+      #buttons button:hover{
+        background:#fff;
+        color:#1AAB8A;
+      }
+      #buttons button:before,#buttons button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #1AAB8A;
+        /*transition:400ms ease all;*/
+      }
+      #buttons button:after{
+        top:inherit;
+        left: 0;
+        bottom:0;
+      }
+      #buttons button:hover:before,#buttons button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+      .range-slider__range {
+      -webkit-appearance: none;
+      width: calc(75% - (373px));
+      height: 5px;
+      border-radius: 5px;
+      background: #d7dcdf;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      }
+    .range-slider__range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #2c3e50;
+      cursor: pointer;
+      -webkit-transition: background .15s ease-in-out;
+      transition: background .15s ease-in-out;
+    }
+    .range-slider__range::-webkit-slider-thumb:hover {
+      background: #1abc9c;
+    }
+    .range-slider__range:active::-webkit-slider-thumb {
+      background: #1abc9c;
+    }
+    .range-slider__value {
+      display: inline-block;
+      position: relative;
+      width: 60px;
+      color: #fff;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 3px;
+      background: #2c3e50;
+      padding: 5px 10px;
+      margin-left: 8px;
+    }
+    .range-slider__value:after {
+      position: absolute;
+      top: 8px;
+      left: -7px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid #2c3e50;
+      border-bottom: 7px solid transparent;
+      content: '';
+    }
